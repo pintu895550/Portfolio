@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintu Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/98c7ce4a4a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class = "container">
+            <nav>
+                <img src="portfolio-Photoroom.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div id="header-text">
+                <img src="pintu.png" class="img">
+                <p>Software Developer</p>
+                <h1>  Hi , I'm <span>PINTU </span> PRAJAPAT</h1> 
+            </div>
+        </div>
+    </div>
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="pintu2.png" >
+                </div>
+                <div class="col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a highly motivated web developer with a strong foundation in HTML, CSS, and JavaScript.
+                       I recently completed a coding bootcamp and am eager to expand my knowledge into frameworks like React or Django.
+                       I've built a few personal projects to practice my skills, 
+                       I'm a quick learner and a team player,
+                       always looking for opportunities to contribute and learn from experienced developers</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>WEB</span> <br> WEB DEVELOPER</li>
+                            <li><span>JAVA</span> <br> JAVA DEVELOPER</li>
+                            <li><span>SEO</span> <br> SEO DEVELOPER</li>
+                            <li><span>DSA</span> <br> PROBLEM SOLVING</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>3 Month</span> <br> Frontend</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Degree</span> <br>B.Tech(CSE)</li>
+                            <li><span>College</span> <br> Arya College Of Engineering</li>
+                            <li><span>School</span> <br>12TH <br>Adarsh Vidhya Mandir, Jhalra Patan(Jhalawar)<br>percentage = 81%</li>
+                            <li><span>10TH</span> <br>GSSS DOONGAR GAON (JHALAWAR, RAJ.) <br>Percentage = 76%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="conatainer">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <h2>Speech To Voice Converter</h2>
+                    <p>A Speech-to-Voice Converter typically refers to a system that processes spoken input
+                       and converts it into another form of voice output</p>
+                       <a href="http://127.0.0.1:5502/voice.html">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Tic Tac Toe Game</h2>
+                    <p> Tic-Tac-Toe is a classic two-player strategy game played on a 3×3 grid. 
+                        Players take turns marking a space with either "X" or "O", 
+                        aiming to get three in a row horizontally, vertically, or diagonally.</p>
+                        <a href="http://127.0.0.1:5501/game.html">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ghost"></i>
+                    <h2>Rock Paper Scissor Game</h2>
+                    <p>Rock Paper Scissors is a simple hand game played between two players.
+                         It is often used for decision-making or as a fun competitive game.</p>
+                         <a href="http://127.0.0.1:5501/rps.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="amazon2.webp" class="amazon">
+                    <div class="layer">
+                        <h2>Amazon Front Page</h2>
+                        <p>Creating an Amazon-like front page using HTML and CSS
+                           involves designing a responsive layout with key sections like the navigation bar,
+                           product categories, banners, and featured products.</p>
+                           <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="mobile.png" class="mobile">
+                    <div class="layer">
+                        <h2>Social Media App</h2>
+                        <p>A social media app is a platform that allows users to connect, share content,
+                           and interact with others online</p>
+                           <a href="#"><i class="fa-solid fa-link"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa-solid fa-envelope"></i> pintukumhar479@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 8955502155</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/its_pin2_prajapat/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/pintu-prajapat-374497252/"><i class="fa-brands fa-linkedin"></i></a>
+                       <a href="https://github.com/pintu895550"><i class="fa-brands fa-github"></i></a>
+                       <a href="https://x.com/PintuPin7224"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="Pintu.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name = "name" placeholder="Your Name" required>
+                        <input type="email" name = "email" placeholder="Your E-mail" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" ></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Portfolio. Made with <i class="fa-solid fa-heart"></i> by Pintu Prajapat </p>
+        </div>
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzCzK_OWRWqUUt1-9xafrVEnQesIc88Pu2wrpMCudRB2f70853tW0pqVtG-Y3itni_W/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                } , 3000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
